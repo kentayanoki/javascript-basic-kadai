@@ -1,5 +1,3 @@
-const date = new Date();
-let i =0;
 const [month, day, year] = [
   date.getMonth(),
   date.getDate(),
