@@ -1,7 +1,11 @@
-const [month, day, year] = [
-  date.getMonth(),
-  date.getDate(),
-  date.getFullYear(),
-];
+const today = new Date();
 
-console.log(year +'年' + month+1 + '月'+ day + '日');
+const formatDate = () => {
+  const year = today.getFullYear();
+  const month = today.getMonth() + 1; 
+  const day = today.getDate();
+
+  console.log(year + '年' + month + '月' + day + '日');
+};
+
+formatDate();
